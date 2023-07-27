@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits</title>
+  <!-- Daisy UI & tailwind  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- tailwind-customize-colors  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'fruit-primary': '#F85559'
+            
+          }
+        }
+      }
+    }
+  </script>
+  <!-- font-settlement-- -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class="font-lato">
+  <!-- nav-section  -->
+  <header>
+    <nav>
+      <div class="flex bg-fruit-primary container justify-between  mx-auto mt-5 h-20 rounded-full">
+        <div>
+          <ul class="inline-flex mt-7 gap-x-8 text-white ml-10 text-sm ">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Shop</li>
+            <li>All Fruits</li>
+          </ul>
+        </div>
+        <div class="flex items-center text-white gap-3">
+          <img class="h-10" src="./B8A3-fruit-brust-main/images/logo.png" alt="">
+          <h2 class="text-2xl font-semibold">Fruit Burst</h2>
+        </div>
+
+        <div class="form-control justify-center w-56 mr-10 ">
+          <input type="text" placeholder="Search here"
+            class="input h-9 text-xs input-bordered rounded-full  md:w-auto" />
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Banner Section -->
+  <div class="mt-14 container mx-auto">
+    <div class="carousel ">
+      <!-- slide1 -->
+      <div id="slide1" class="carousel-item relative w-full bg-gradient-to-r from-black to-white rounded-lg">
+        <img src="./B8A3-fruit-brust-main/images/banner1.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle bg-blackish text-white border-none hover:text-black">❮</a>
+          <div class="flex flex-col gap-7 text-white text-center justify-center items-center">
+            <h2 class="text-2xl lg:text-7xl font-bold">
+              Exotic tastes at your
+              <br>
+              doorstep
+            </h2>
+            <button
+              class="btn bg-fruit-primary text-sm border-none text-white w-fit py-3 px-5 capitalize font-bold ">Shop
+              Now</button>
+          </div>
+          <a href="#slide2" class="btn btn-circle bg-blackish text-white border-none hover:text-black">❯</a>
+        </div>
+      </div>
+
+      <!-- slide2 -->
+      <div id="slide2" class="carousel-item relative w-full bg-gradient-to-r from-black to-white rounded-lg">
+        <img src="./B8A3-fruit-brust-main/images/banner2.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle bg-blackish text-white border-none hover:text-black">❮</a>
+          <div class="flex flex-col gap-8 text-white text-center justify-center items-center">
+            <h2 class="text-2xl lg:text-7xl font-extrabold">
+              Exotic tastes at your
+              <br>
+              doorstep
+            </h2>
+            <button
+              class="btn bg-fruit-primary text-sm border-none text-white w-fit py-3 px-5 capitalize font-bold">Shop
+              Now</button>
+          </div>
+          <a href="#slide3" class="btn btn-circle bg-blackish text-white border-none hover:text-black">❯</a>
+        </div>
+      </div>
+
+      <!-- slide3 -->
+      <div id="slide3" class="carousel-item relative w-full bg-gradient-to-r from-black to-white rounded-lg">
+        <img src="./B8A3-fruit-brust-main/images/banner3.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle bg-blackish text-white border-none hover:text-black">❮</a>
+          <div class="flex flex-col gap-8 text-white text-center justify-center items-center">
+            <h2 class="text-2xl lg:text-7xl font-extrabold">
+              Exotic tastes at your
+              <br>
+              doorstep
+            </h2>
+
+            <button
+              class="btn bg-fruit-primary text-sm border-none text-white w-fit py-3 px-5 capitalize font-bold">Shop
+              Now</button>
+          </div>
+          <a href="#slide4" class="btn btn-circle bg-blackish text-white border-none hover:text-black">❯</a>
+        </div>
+      </div>
+
+      <!-- slide4 -->
+      <div id="slide4" class="carousel-item relative w-full bg-gradient-to-r from-black to-white rounded-lg">
+        <img src="/B8A3-fruit-brust-main/images/banner4.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle bg-blackish text-white border-none hover:text-black">❮</a>
+          <div class="flex flex-col gap-8 text-white text-center justify-center items-center">
+            <h2 class="text-2xl lg:text-7xl font-extrabold">
+              Exotic tastes at your
+              <br>
+              doorstep
+            </h2>
+
+            <button
+              class="btn bg-fruit-primary text-sm border-none text-white w-fit py-3 px-5 capitalize font-bold">Shop
+              Now</button>
+          </div>
+          <a href="#slide1" class="btn btn-circle bg-blackish text-white border-none  hover:text-black">❯</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- bonus section -->
+
+  <section
+    class="bg-white shadow-md rounded-md h-40 pb-4 mx-60 pt-3 flex items-center justify-around gap-2 relative bottom-20 hidden lg:flex">
+
+    <div class="flex flex-col text-center">
+      <img class="h-24 w-24" src="./B8A3-fruit-brust-main/images/fruit1.png" alt="">
+      <p>Strawberry</p>
+    </div>
+    <div class="flex flex-col text-center">
+      <img class="h-24 w-24" src="./B8A3-fruit-brust-main/images/fruit2.png" alt="">
+      <p>Orange</p>
+    </div>
+    <div class="flex flex-col text-center">
+      <img class="h-24 w-24" src="./B8A3-fruit-brust-main/images/fruit3.png" alt="">
+      <p>Mango</p>
+    </div>
+    <div class="flex flex-col text-center">
+      <img class="h-24 w-24" src="./B8A3-fruit-brust-main/images/fruit4.png" alt="">
+      <p>Strawberry</p>
+    </div>
+    <div class="flex flex-col text-center">
+      <img class="h-24 w-24" src="./B8A3-fruit-brust-main/images/fruit5.png" alt="">
+      <p>Pomegranate</p>
+    </div>
+  </section>
+
+  
+
+
+
+</body>
+
+</html>
